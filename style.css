@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #bb8c4b;
+}
+
+
+/* header section */
+
+header .navbar-brand .logo {
+    height: 80px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav-item .nav-link {
+    font-size: 18px;
+}
+
+.nav-item .nav-link::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 0px;
+    background-color: #bb8c4b;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-btn button {
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid var(--primary-color);
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-btn button:hover {
+    background-color: var(--primary-color);
+
+}
+
+.carousel,
+.carousel-inner {
+    min-height: 100vh;
+}
+
+.carousel-inner img {
+    height: 100vh;
+    object-fit: cover;
+}
