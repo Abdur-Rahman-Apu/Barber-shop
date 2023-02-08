@@ -8,6 +8,11 @@
 
 
 /* navbar  */
+
+header .navbar {
+    margin: 0 20px;
+}
+
 header .navbar-brand .logo {
     height: 80px;
 }
@@ -65,9 +70,12 @@ header .navbar-brand .logo {
 .carousel-inner img {
     height: 100vh;
     object-fit: cover;
+    filter: brightness(50%);
 }
 
-.first-slider {
+.first-slider,
+.second-slider,
+.third-slider {
     position: absolute;
     top: 50%;
     right: 50%;
@@ -87,7 +95,24 @@ header .navbar-brand .logo {
     margin-bottom: 0;
 }
 
-.first-slider h5 {
+.first-slider h5,
+.second-slider h5,
+.third-slider h5 {
     font-size: 60px;
     font-weight: bold;
+}
+
+.btn button {
+    padding: 10px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
+    transition: 0.5s;
+}
+
+.btn button:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
