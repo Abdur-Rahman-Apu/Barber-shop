@@ -5,6 +5,9 @@
 
 /* header section */
 
+
+
+/* navbar  */
 header .navbar-brand .logo {
     height: 80px;
 }
@@ -37,7 +40,7 @@ header .navbar-brand .logo {
     padding: 5px 10px;
     background: transparent;
     color: white;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     font-size: 18px;
     transition: 0.3s;
 }
@@ -47,6 +50,13 @@ header .navbar-brand .logo {
 
 }
 
+.navbar-icon {
+    color: white;
+}
+
+
+/* slider  */
+
 .carousel,
 .carousel-inner {
     min-height: 100vh;
@@ -55,4 +65,29 @@ header .navbar-brand .logo {
 .carousel-inner img {
     height: 100vh;
     object-fit: cover;
+}
+
+.first-slider {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.first-slider p,
+.first-slider span {
+    font-size: 12px;
+}
+
+.first-slider p:first-child {
+    color: #bb8c4b;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.first-slider h5 {
+    font-size: 60px;
+    font-weight: bold;
 }
