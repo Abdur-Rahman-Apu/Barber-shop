@@ -3,6 +3,7 @@
     --footer-upper: #202020;
     --social-icon-color: #bea88b;
     --social-icon-hover-color: #a6804f;
+    --navbar-color: #3d3d3d;
 }
 
 
@@ -13,7 +14,7 @@
 /* navbar  */
 
 header .navbar {
-    margin: 0 20px;
+    padding: 0 20px;
 }
 
 header .navbar-brand .logo {
@@ -62,6 +63,9 @@ header .navbar-brand .logo {
     color: white;
 }
 
+.transparent-background {
+    background-color: black;
+}
 
 /* slider  */
 
