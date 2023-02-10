@@ -170,10 +170,35 @@ header .navbar-brand .logo {
     color: var(--primary-color);
 }
 
+/* hair style  */
+
 .hair-style .row .col {
     display: flex;
     justify-content: center;
     padding: 5px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.hair-style .row .col .style-info {
+    position: absolute;
+    bottom: -80px;
+    background-color: black;
+    color: white;
+    width: 97%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.hair-style .row .col:hover .style-info {
+    bottom: 0;
+}
+
+.style-info span {
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 
@@ -202,8 +227,16 @@ header .navbar-brand .logo {
     margin-right: 5px;
 }
 
+.barbers-social div:hover {
+    background-color: var(--primary-color);
+}
+
 .barbers-social div i {
     font-size: 18px;
+}
+
+.barbers-social div:hover i {
+    color: white;
 }
 
 .intro {
@@ -237,8 +270,10 @@ header .navbar-brand .logo {
     padding: 20px;
 }
 
+
 .barbers .row .col:hover img {
     filter: brightness(60%);
+
 }
 
 .barbers .row .col:hover .intro {
