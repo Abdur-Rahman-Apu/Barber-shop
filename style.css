@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&family=Oswald:wght@400;700&family=Yantramanav&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&family=Oleo+Script&family=Oswald:wght@400;700&family=Yantramanav&display=swap');
 
 * {
     margin: 0;
@@ -16,12 +16,11 @@
     --finlandica-font: 'Finlandica', sans-serif;
     --oswald-font: 'Oswald', sans-serif;
     --yantra-font: 'Yantramanav', sans-serif;
+    --oleo-font: 'Oleo Script', cursive;
 }
 
 
 /* header section */
-
-
 
 /* navbar  */
 
@@ -30,9 +29,20 @@ header .navbar {
     font-family: var(--finlandica-font);
 }
 
-header .navbar-brand .logo {
-    height: 80px;
+header .navbar-brand {
+    color: white;
+    font-family: var(--oleo-font);
+    font-size: 25px;
+
+
 }
+
+
+header .navbar-brand .logo {
+    height: 70px;
+}
+
+
 
 .nav-item {
     margin-right: 20px;
