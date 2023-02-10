@@ -1,9 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&family=Oswald:wght@400;700&family=Yantramanav&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: #bb8c4b;
     --footer-upper: #202020;
     --social-icon-color: #bea88b;
     --social-icon-hover-color: #a6804f;
     --navbar-color: #3d3d3d;
+    --finlandica-font: 'Finlandica', sans-serif;
+    --oswald-font: 'Oswald', sans-serif;
+    --yantra-font: 'Yantramanav', sans-serif;
 }
 
 
@@ -15,6 +27,7 @@
 
 header .navbar {
     padding: 0 20px;
+    font-family: var(--finlandica-font);
 }
 
 header .navbar-brand .logo {
@@ -72,6 +85,7 @@ header .navbar-brand .logo {
 .carousel,
 .carousel-inner {
     min-height: 100vh;
+    font-family: var(--oswald-font);
 }
 
 .carousel-inner img {
@@ -131,6 +145,8 @@ header .navbar-brand .logo {
 
 .about .row div {
     height: 400px;
+    font-family: var(--finlandica-font);
+
 }
 
 .about .row div img {
@@ -139,8 +155,10 @@ header .navbar-brand .logo {
 }
 
 .about .row div h5 {
-    font-size: 40px;
+    font-family: var(--oswald-font);
+    font-size: 45px;
     font-weight: bold;
+
 }
 
 .about .row div :nth-child(4) {
@@ -156,11 +174,15 @@ header .navbar-brand .logo {
 
 /* gallery  */
 
+
+
 .gallery h5,
 .hair-style h5,
 .barbers h5 {
-    font-size: 40px;
     margin-bottom: 0;
+    font-family: var(--oswald-font);
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .gallery i,
@@ -286,6 +308,13 @@ header .navbar-brand .logo {
     opacity: 1;
 }
 
+
+.gallery,
+.hair-style,
+.barbers {
+    margin: 80px 0;
+}
+
 /* footer  */
 
 footer {
@@ -295,6 +324,7 @@ footer {
 
 footer .footer-upper {
     background-color: var(--footer-upper);
+    font-family: var(--yantra-font);
 }
 
 .footer-upper .contact span {
@@ -349,6 +379,7 @@ footer .footer-upper {
 .footer-bottom {
     height: 80px;
     background-color: #1a1a1a;
+    font-family: var(--oswald-font);
 }
 
 .footer-bottom p {
