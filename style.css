@@ -33,8 +33,10 @@ header .navbar-brand {
     color: white;
     font-family: var(--oleo-font);
     font-size: 25px;
+}
 
-
+header .navbar-brand:hover p {
+    color: white;
 }
 
 
